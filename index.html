@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Evento Matika Center</title>
+  </head>
+  <body class="home-page">
+    <header>
+      <a href="index.html" class="logo">
+        <span class="end-logo">Event</span
+        ><span class="middle-logo">o Matika </span
+        ><span class="end-logo">Center</span>
+      </a>
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Home page menu button"
+              ><i class="fa-regular fa-house" aria-label="Icon of a house"></i
+            ></a>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero_event_space">
+        <video
+          autoplay
+          muted
+          playsinline
+          controls
+          src="https://media.istockphoto.com/id/2235673970/video/barbarella-2025-in-f%C3%A9lix-s%C3%A1nchez-olympic-stadium-santo-domingo-dominican-republic-aerial-top.mp4?s=mp4-640x640-is&k=20&c=NTVg0w1wpo0GkI-t30xXXFNV9EZI_Ei9MxcZUTriVBc="
+          aria-label="A video showing a drone shot view from above of a music festival event held at the Evento Matika Center."
+          autoplay
+          muted
+          loop
+        >
+          Your browser does not support the video tag. This video shows a drone
+          shot view from above of a music festival event held at the Evento
+          Matika Center.
+        </video>
+
+        <input type="checkbox" id="toggle" />
+        <div class="promo" id="promo">
+          <button
+            class="close"
+            aria-label="Promo sale pop up window close button"
+          >
+            &times;
+          </button>
+          <strong class="badge">ENDING SOON!</strong>
+          <p class="promo-text">
+            Secure early ticket prices now, ends soon. Save up to 30% on your
+            annual pass, click below!
+          </p>
+          <a href="tickets.html" class="promo-button"
+            >Secure My Early Ticket Discount</a
+          >
+        </div>
+      </section>
+
+      <section class="key_metrics_bar">
+        <div class="metric-card">
+          <h1>~800,000</h1>
+          <h3>ATTENDEES</h3>
+        </div>
+        <div class="metric-card">
+          <h1>500+</h1>
+          <h3>CONCERTS</h3>
+        </div>
+        <div class="metric-card">
+          <h1>300+</h1>
+          <h3>CONFERENCES</h3>
+        </div>
+        <div class="metric-card">
+          <h1>6,000+</h1>
+          <h3>PARTNERS</h3>
+        </div>
+        <div class="metric-card">
+          <h1>50,000+</h1>
+          <h3>Sqft EVENT SPACE</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-page-footer">
+      <p>&COPY;2026 Evento Matika Center. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navigation = document.querySelector("nav");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

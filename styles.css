@@ -1,0 +1,1040 @@
+:root {
+  --primary-color: rgb(10, 25, 47);
+  --accent-color: #3498db;
+  --bg-color: #f4f7f6;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --font-size: 1em;
+  --accent-red: rgb(240, 48, 48);
+  --bg-dark: #0e0e1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+  min-height: 100vh !important;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.home-page {
+  background-color: var(--primary-color);
+}
+
+/*////////////////////////////////        INDEX PAGE STYLES            //////////////////////////////////  */
+
+.home-page {
+  line-height: 1.6;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  /* font-size: 3em; */
+  /* font-size: 3vw; */
+  font-size: 2em;
+  font-family: "merriweather", serif;
+  white-space: nowrap;
+}
+
+span.end-logo {
+  color: ivory;
+}
+
+span.middle-logo:hover {
+  color: ivory;
+  /* span.end-logo {
+    color: var(--primary-color); looking to nest css and affect other elements when hover over one. Cool idea but nice to have for now. But it is possible to do something like this per search
+  } */
+}
+
+span.end-logo:hover {
+  color: var(--primary-color);
+}
+
+header {
+  background-color: rgb(240, 48, 48);
+  display: flex;
+  justify-content: space-between;
+  min-width: 100vw;
+  position: sticky;
+  top: 0;
+  flex-wrap: nowrap;
+  padding: 20px;
+  z-index: 1000;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 1.5em;
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul a:hover {
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.menu-toggle {
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none !important;
+}
+
+.hero_event_space {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 78vh;
+  min-width: 100vw;
+  object-fit: cover;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .............................................     PROMO MESSAGE WINDOW     ................................. */
+
+.promo {
+  position: absolute;
+  background-color: rgb(24, 49, 81);
+  color: white;
+  border-radius: 12px;
+  width: 250px;
+  top: 75px;
+  right: 200px;
+  padding: 12px;
+  opacity: 95%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 1px gray;
+}
+
+.badge {
+  background-color: var(--accent-red);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 12px;
+  width: 115px;
+  text-align: center;
+}
+
+.promo-text {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.promo-button {
+  background-color: var(--accent-red);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  justify-content: center;
+  display: flex;
+  width: 225px;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: white;
+  width: 25px;
+  height: 25px;
+}
+
+#toggle {
+  z-index: 50;
+  position: absolute;
+  top: 91px;
+  right: 210px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#toggle:checked {
+  cursor: default;
+}
+
+#toggle:checked ~ #promo {
+  display: none;
+}
+
+/*.................................................       METRICS BAR - INDEX PAGE      ....................... */
+
+.key_metrics_bar {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+.metric-card {
+  text-align: center;
+}
+
+.metric-card h1 {
+  font-size: 44px;
+}
+
+.metric-card h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2em;
+}
+
+/*.................................................       FOOTER      .............................................. */
+
+footer {
+  color: white;
+  font-size: 0.75em;
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.home-page-footer {
+  padding: 10px;
+}
+
+/* ////////////////////////////////////////////////    MEDIA QUERIES     ////////////////////////////////////////////////////// */
+
+@media (max-width: 1000px) {
+  .metric-card h1 {
+    font-size: 22px;
+  }
+
+  .metric-card h3 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 715px) {
+  /* hide the menu */
+
+  nav {
+    display: none;
+  }
+
+  /* show the hamburger icon */
+  .menu-toggle {
+    display: flex !important;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+    padding-left: 20px;
+  }
+
+  nav.active {
+    display: block;
+    position: absolute;
+    background-color: var(--accent-red);
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 80px;
+    padding-bottom: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Move and center the message window */
+  .promo {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  /* Move and center the close checkbox button */
+  #toggle {
+    /* opacity: 100; */
+    left: 0;
+    right: -220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .key_metrics_bar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 435px) {
+  header {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px 0px 0px 0px;
+  }
+
+  nav.active {
+    top: 120px;
+    padding-right: 0px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*///////////////////////////////////////////////   EVENT PAGE STYLES  //////////////////////////////////////////////// */
+
+.event-page {
+  line-height: 1.6;
+}
+
+.event-categories {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  text-align: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid lightgrey;
+  margin-bottom: 10px;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.event-listings {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.checkbox-label {
+  display: none;
+}
+
+/* May not need event row container with flex wrap */
+
+.event-card-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-height: 325px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 450px;
+  margin: 10px 0px 10px 0px;
+}
+
+.event-card img {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.event-listings {
+  padding-bottom: 60px;
+}
+
+.almost-full {
+  background-color: pink;
+  max-width: 100px;
+  border-radius: 8%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.sale-ends {
+  background-color: lightcoral;
+  max-width: 125px;
+  border-radius: 8%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.sponsor-open {
+  background-color: lightseagreen;
+  max-width: 150px;
+  border-radius: 8%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.reg-open {
+  background-color: lightgreen;
+  max-width: 150px;
+  border-radius: 8%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.selling-fast {
+  background-color: lightsalmon;
+  max-width: 150px;
+  border-radius: 8%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.bogo {
+  background-color: lightgoldenrodyellow;
+  max-width: 60px;
+  border-radius: 8%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* confines the area that can be clicked for the checkbox to the checkbox itself */
+
+input[type="checkbox"] {
+  align-self: center;
+}
+/* makes the background circle change color when the mouse hovers over the checkbox */
+body:has(#filter-music:hover) #circle-music {
+  background-color: rgb(217, 231, 236);
+}
+
+/* thicken border when checkbox checked */
+body:has(#filter-music:checked) #circle-music {
+  border-width: 4px;
+  border-color: black;
+  background-color: rgb(217, 231, 236);
+}
+
+/* turn icon a different color whenc checkbox checked */
+body:has(#filter-music:checked) .fa-music {
+  color: red;
+}
+
+#filter-music {
+  z-index: 50;
+  top: -205px;
+  left: -445px;
+  transform: scale(12);
+  opacity: 0;
+  position: relative;
+  cursor: pointer !important;
+}
+
+/* Seems like I need to move the checkboxes to the other seciton with the circles? Will this not fuck up that styling? */
+/* Tempted to brute force the position of the box cards up if possible or make overflow not a factor for other one */
+
+/* #filter-music:checked {
+  cursor: default;
+} */
+
+#filter-music:checked ~ .event-card-row .not-music {
+  display: none;
+}
+
+/* makes the background circle change color when the mouse hovers over the checkbox */
+body:has(#filter-hobbies:hover) #circle-hobbies {
+  background-color: rgb(217, 231, 236);
+  cursor: pointer;
+}
+
+/* thicken border when checkbox checked */
+body:has(#filter-hobbies:checked) #circle-hobbies {
+  border-width: 4px;
+  border-color: black;
+  background-color: rgb(217, 231, 236);
+}
+
+/* turn icon a different color whenc checkbox checked */
+body:has(#filter-hobbies:checked) .fa-gamepad {
+  color: red;
+}
+
+body:has(#filter-hobbies:checked) .first-row {
+  display: none;
+}
+
+#filter-hobbies {
+  z-index: 50;
+  top: -250px;
+  left: -215px;
+  transform: scale(12);
+  opacity: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+#filter-hobbies:checked ~ .event-card-row .not-hobbies {
+  display: none;
+}
+
+#filter-business {
+  z-index: 50;
+  top: -225px;
+  transform: scale(12);
+  opacity: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+/* makes the background circle change color when the mouse hovers over the checkbox */
+body:has(#filter-business:hover) #circle-business {
+  background-color: rgb(217, 231, 236);
+}
+
+/* thicken border when checkbox checked */
+body:has(#filter-business:checked) #circle-business {
+  border-width: 4px;
+  border-color: black;
+  background-color: rgb(217, 231, 236);
+}
+
+/* turn icon a different color whenc checkbox checked */
+body:has(#filter-business:checked) .fa-chart-line {
+  color: red;
+}
+
+#filter-business:checked ~ .event-card-row .not-business {
+  display: none;
+}
+
+body:has(#filter-nightlife:hover) #circle-nightlife {
+  background-color: rgb(217, 231, 236);
+}
+
+body:has(#filter-nightlife:checked) #circle-nightlife {
+  border-width: 4px;
+  border-color: black;
+  background-color: rgb(217, 231, 236);
+}
+
+body:has(#filter-nightlife:checked) .fa-moon {
+  color: red;
+}
+
+#filter-nightlife {
+  z-index: 50;
+  top: -250px;
+  right: -235px;
+  transform: scale(12);
+  opacity: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+#filter-nightlife:checked ~ .event-card-row .not-nightlife {
+  display: none;
+}
+
+body:has(#filter-dating:hover) #circle-dating {
+  background-color: rgb(217, 231, 236);
+}
+
+body:has(#filter-dating:checked) #circle-dating {
+  border-width: 4px;
+  border-color: var(--primary-color);
+  background-color: rgb(217, 231, 236);
+}
+
+body:has(#filter-dating:checked) .fa-martini-glass-empty {
+  color: red;
+}
+
+#filter-dating {
+  z-index: 50;
+  top: -250px;
+  right: -450px;
+  transform: scale(12);
+  opacity: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+#filter-dating:checked ~ .event-card-row .not-dating {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .event-categories {
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .circle {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 64px;
+    font-size: 32px;
+    height: auto;
+  }
+
+  #filter-music {
+    z-index: 50;
+    top: -70px;
+    left: -175px;
+    transform: scale(5);
+  }
+
+  #filter-hobbies {
+    z-index: 50;
+    top: -85px;
+    left: -90px;
+    transform: scale(5);
+    /* opacity: 100; */
+  }
+  #filter-business {
+    z-index: 50;
+    top: -95px;
+    left: 0px;
+    transform: scale(5);
+    /* opacity: 100; */
+  }
+  #filter-nightlife {
+    z-index: 50;
+    top: -110px;
+    left: 90px;
+    transform: scale(5);
+    /* opacity: 100; */
+  }
+  #filter-dating {
+    z-index: 50;
+    top: -125px;
+    left: 180px;
+    transform: scale(5);
+    /* opacity: 100; */
+  }
+}
+
+@media (max-width: 475px) {
+  .event-categories {
+    gap: 15px;
+  }
+
+  .category-container h4 {
+    font-size: 14px;
+  }
+
+  .circle {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 48px;
+    font-size: 18px;
+    height: auto;
+  }
+
+  #filter-music {
+    z-index: 50;
+    top: -60px;
+    left: -135px;
+    transform: scale(4);
+  }
+
+  #filter-hobbies {
+    z-index: 50;
+    top: -75px;
+    left: -70px;
+    transform: scale(4);
+    /* opacity: 100; */
+  }
+  #filter-business {
+    z-index: 50;
+    top: -85px;
+    left: 0px;
+    transform: scale(4);
+    /* opacity: 100; */
+  }
+  #filter-nightlife {
+    z-index: 50;
+    top: -100px;
+    left: 70px;
+    transform: scale(4);
+    /* opacity: 100; */
+  }
+  #filter-dating {
+    z-index: 50;
+    top: -115px;
+    left: 140px;
+    transform: scale(4);
+    /* opacity: 100; */
+  }
+}
+
+/*///////////////////////////////////////////////          TICKETS PAGE STYLES          //////////////////////////////////////////*/
+
+.tickets-page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("Images/ticket-stubs.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tickets-page-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+}
+
+.ticket-heading-text {
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  gap: 40px;
+}
+
+.ticket-pricing {
+  overflow-x: auto;
+  width: 100%;
+  padding: 15px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+/*.....................................            TABLE STYLE ELEMENTS           .................................. */
+
+.ticket-table {
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: 5px 15px 15px 0px gray;
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1000px;
+  list-style: none;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 25px 0;
+  font-size: 0.9em;
+  text-align: left;
+  background-color: white;
+}
+
+.ticket-table thead tr {
+  background-color: rgb(217, 231, 236);
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.ticket-table th,
+.ticket-table td {
+  padding: 12px 15px;
+}
+
+td ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.col-center {
+  text-align: center;
+}
+
+td ul li:before {
+  content: "- ";
+  font-weight: bold;
+}
+
+.ticket-table tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.ticket-table tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.ticket-table tr:last-of-type {
+  border-bottom: px solid rgb(217, 231, 236);
+}
+
+.ticket-table tr.active-row {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/*................................           TICKET FORM STYLE          ............................................... */
+
+input,
+select,
+textarea,
+.ticket-form-button {
+  font: inherit;
+}
+
+form {
+  display: grid;
+  border-width: 2px;
+  border-style: solid;
+  line-height: 1.6;
+  gap: 1rem;
+  padding: 20px;
+  margin: 25px;
+  background-color: white;
+  border-radius: 15px;
+  min-width: 325px;
+}
+
+@media (min-width: 720px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group {
+  gap: 5px;
+  display: grid;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: revert;
+}
+
+input {
+  background: rgb(215, 231, 240);
+  border-radius: 2%;
+  padding: 5px 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-red);
+  border-width: 2px;
+}
+
+.form-section-headings {
+  grid-column: 1/-1;
+}
+
+.card-number {
+  grid-column: 1/-1;
+}
+
+.ticket-form-button {
+  background-color: var(--accent-red);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1em 3em;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(from var(--accent-red) h s 30%);
+    border-color: var(--accent-red);
+    background-color: rgb(215, 231, 240);
+    border-width: 3px;
+    border-style: solid;
+    color: var(--accent-red);
+  }
+}
+
+/*.......................................................           TRAVEL PARTNERS STYLES          .................. */
+
+.travel-partners {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 25px;
+  min-width: 200px;
+  min-height: 250px;
+}
+
+.travel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 300px;
+  min-width: 185px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.travel-content {
+  display: grid;
+}
+
+.ticket-p {
+  padding: 10px;
+}
+
+.travel-h3 {
+  padding-top: 10px;
+}
+
+.travel-content ol {
+  display: grid;
+  place-content: center;
+  text-align: left;
+}
+
+.travel-content ol li a {
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .travel-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*////////////////////////////////////////////////////          ABOUT PAGE STYLES            ///////////////////////////*/
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Images/event-show-floor.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.about-page-footer {
+  padding: 10px;
+}
+
+.about-us-text {
+  align-items: center;
+  background-color: var(--primary-color);
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+.light-h1 {
+  color: white;
+  text-align: center;
+}
+
+.about-article {
+  max-width: 600px;
+  color: white;
+}
+
+.about-article p {
+  padding: 1em;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Evento Matika Center</title>
+  </head>
+  <body class="about-page">
+    <header>
+      <a href="index.html" class="logo">
+        <span class="end-logo">Event</span
+        ><span class="middle-logo">o Matika </span
+        ><span class="end-logo">Center</span>
+      </a>
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Home page menu button"
+              ><i class="fa-regular fa-house" aria-label="Icon of a house"></i
+            ></a>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-main">
+      <section class="about-us-text">
+        <h1 class="light-h1">About Us</h1>
+
+        <article class="about-article">
+          <p>
+            Located in the heart of the community, Evento Matika Center is a
+            premier multi-purpose venue designed to bring people together
+            through world-class production and versatile event spaces. From the
+            electric energy of sold-out concerts featuring local and
+            international talent to the professional atmosphere of high-stakes
+            business fairs and expos, our center is engineered to adapt. We
+            pride ourselves on offering a state-of-the-art environment where
+            acoustics, lighting, and layout work in perfect harmony to create
+            unforgettable experiences for every guest.
+          </p>
+
+          <p>
+            Beyond large-scale productions, we are a dedicated hub for
+            professional growth and personal connection. Our modern facilities
+            provide the ideal backdrop for high-impact networking events,
+            allowing industry leaders and entrepreneurs to collaborate in a
+            sophisticated setting. We also understand the importance of
+            community and human connection, which is why we host curated dating
+            events designed to be comfortable, engaging, and fun. Whether you
+            are looking to expand your professional circle or meet someone
+            special, our space is built to facilitate meaningful interactions.
+          </p>
+
+          <p>
+            At Evento Matika Center, our mission is to turn every gathering into
+            a landmark occasion. We combine a passion for hospitality with a
+            commitment to excellence, ensuring that every expo, concert, or
+            social mixer is executed with precision. Our experienced event
+            coordination team works tirelessly to support organizers and
+            attendees alike, making us the go-to destination for those who value
+            quality, accessibility, and a vibrant atmosphere. Join us at Evento
+            Matika, where every event finds its perfect home.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="events-page-footer">
+      <p>&COPY;2026 Evento Matika Center. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navigation = document.querySelector("nav");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

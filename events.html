@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Evento Matika Center</title>
+  </head>
+  <body class="event-page">
+    <header>
+      <a href="index.html" class="logo">
+        <span class="end-logo">Event</span
+        ><span class="middle-logo">o Matika </span
+        ><span class="end-logo">Center</span>
+      </a>
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Home page menu button"
+              ><i class="fa-regular fa-house" aria-label="Icon of a house"></i
+            ></a>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="events-main">
+      <section
+        class="event-categories"
+        aria-label="Section with clickable event filter buttons by icon"
+      >
+        <div class="category-container">
+          <div class="circle" id="circle-music">
+            <a href="#" aria-label="Button to filter for music events">
+              <i
+                class="fa-solid fa-music"
+                aria-label="Icon of a musical note"
+              ></i>
+            </a>
+          </div>
+          <h4>Music</h4>
+        </div>
+        <div class="category-container">
+          <div class="circle" id="circle-hobbies">
+            <a href="#" aria-label="Button to filter for hobby events">
+              <i
+                class="fa-solid fa-gamepad"
+                aria-label="Icon of a nintendo game controller"
+              ></i>
+            </a>
+          </div>
+          <h4>Hobbies</h4>
+        </div>
+        <div class="category-container">
+          <div class="circle" id="circle-business">
+            <a href="#" aria-label="Button to filter for business events">
+              <i
+                class="fa-solid fa-chart-line"
+                aria-label="Icon of a line chart going up to the right"
+              ></i>
+            </a>
+          </div>
+          <h4>Business</h4>
+        </div>
+        <div class="category-container">
+          <div class="circle" id="circle-nightlife">
+            <a href="#" aria-label="Button to filter for nightlife events">
+              <i class="fa-solid fa-moon" aria-label="Icon of a half moon"></i>
+            </a>
+          </div>
+          <h4>Nightlife</h4>
+        </div>
+        <div class="category-container">
+          <div class="circle" id="circle-dating">
+            <a href="#" aria-label="Button to filter for dating events">
+              <i
+                class="fa-solid fa-martini-glass-empty"
+                aria-label="Icon of martini glass"
+              ></i>
+            </a>
+          </div>
+          <h4>Dating</h4>
+        </div>
+      </section>
+
+      <section
+        class="event-listings"
+        aria-label="Section listing events by event cards"
+      >
+        <input type="checkbox" id="filter-music" />
+        <input type="checkbox" id="filter-hobbies" />
+        <input type="checkbox" id="filter-business" />
+        <input type="checkbox" id="filter-nightlife" />
+        <input type="checkbox" id="filter-dating" />
+        <div class="event-card-row first-row">
+          <article class="event-card not-hobbies not-business not-dating">
+            <img
+              src="Images/Taylor_jpeg.jpg"
+              alt="Taylor Swift Concert Billboard"
+            />
+            <strong class="almost-full">Almost Full</strong>
+            <h4>Taylor Swift : Mega Tour</h4>
+            <p>Saturday, March 14th 7:00 PM</p>
+            <p class="price">From $159.99</p>
+          </article>
+          <article
+            class="event-card not-music not-hobbies not-nightlife not-dating"
+          >
+            <img
+              src="Images\Speaking_gif.gif"
+              alt="A man speaking in front of a screen towards an audience"
+            />
+            <strong class="sale-ends">Sale Ends Soon</strong>
+            <h4>The Art of Presenting</h4>
+            <p>Tuesday, March 17th 10:00 AM</p>
+            <p class="price">$79.99</p>
+          </article>
+          <article
+            class="event-card not-music not-hobbies not-nightlife not-dating"
+          >
+            <img
+              src="Images\Framing_png.png"
+              alt="A construction site with a wood framed building"
+            />
+            <strong class="sponsor-open">Sponsorhsips Open</strong>
+            <h4>Framing Mania 2026</h4>
+            <p>Saturday & Sunday, March 21-22nd All Day</p>
+            <p class="price">$49.99</p>
+          </article>
+          <article
+            class="event-card not-music not-hobbies not-nightlife not-dating"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2199035766/photo/diverse-businesspeople-during-break-on-seminar.jpg?s=2048x2048&w=is&k=20&c=DWrkyxTTqYagnMIGWQ7_F7fywGjJ9xdMKhOk0EBtTPk="
+              alt="A group of people in business attire talking in front of a catered food table"
+            />
+            <strong class="reg-open">Registration Open</strong>
+            <h4>Networking Your Next Job</h4>
+            <p>Tuesday March 24th 9:00 AM</p>
+            <p class="price">$15.99</p>
+          </article>
+          <article class="event-card not-music not-hobbies not-business">
+            <img
+              src="https://media.istockphoto.com/id/2219644646/photo/a-group-of-tipsy-friends-has-a-blast-at-the-summer-roof-party-at-night.jpg?s=2048x2048&w=is&k=20&c=eydSfyZ18nZMmOL4yuWkGtKjTgHF5W4oY0lPMqalPzE="
+              alt="People dancing and posing for a picture in a low light environment"
+            />
+            <strong class="bogo">BOGO</strong>
+            <h4>Single Professionals Mixer</h4>
+            <p>Friday, March 27th 6:00 PM</p>
+            <p class="price">$29.99</p>
+          </article>
+        </div>
+
+        <div class="event-card-row">
+          <article
+            class="event-card not-music not-hobbies not-nightlife not-dating"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2231181721/photo/multiethnic-middle-aged-executives-discussing-documents-during-office-brainstorming.jpg?s=2048x2048&w=is&k=20&c=iY4UXRcUiyZZ2mFGKJY_OWj-L47plnsv-AN2Q3HbuR4="
+              alt="An top down view of a group of people working at a table with papers and coffee"
+            />
+            <strong class="bogo">BOGO</strong>
+            <h4>Entreprenuership In The Age Of AI</h4>
+            <p>Saturday, March 28th 11:00 AM</p>
+            <p class="price">$49.99</p>
+          </article>
+          <article
+            class="event-card not-music not-business not-nightlife not-dating"
+          >
+            <img
+              src="https://media.istockphoto.com/id/163639136/photo/training-to-win.jpg?s=2048x2048&w=is&k=20&c=TqzYzjCSOIay_gWsKcCip68TDgAX8ZG82wR2ybXmUPA="
+              alt="A group of athletic people in wetsuits with goggles and swim caps on running out of a body of water"
+            />
+            <strong class="reg-open">Registration Open</strong>
+            <h4>Minneapolis 2026 Triatholon meetup</h4>
+            <p>Sunday, March 29th 12:00 PM</p>
+            <p class="price">Free</p>
+          </article>
+          <article class="event-card not-hobbies not-business not-dating">
+            <img
+              src="https://media.istockphoto.com/id/185405817/photo/on-stage.jpg?s=2048x2048&w=is&k=20&c=wkgbRO07mwJN4ovSNBiOpXcdFoCaUlHSFYnHs5c_2cE="
+              alt="Two men with long hair obscuring their faces with one playing guitar"
+            />
+            <strong class="selling-fast">Tickets Selling Fast</strong>
+            <h4>Black Metal Body Bag - Live</h4>
+            <p>Thursday, April 2nd 7:00 PM</p>
+            <p class="price">$66.60</p>
+          </article>
+          <article class="event-card not-hobbies not-business not-dating">
+            <img
+              src="https://media.istockphoto.com/id/1157545996/photo/dj-playing-and-mixing-music-at-party.jpg?s=2048x2048&w=is&k=20&c=GmE5hjqrSN9Y6tnOQiINyYHunbzT0CAiq7xvAWo_bko="
+              alt="A DJ performing in front of an audience from the DJ's point of view with their hand on the mixing table in the foreground"
+            />
+            <strong class="selling-fast">Tickets Selling Fast</strong>
+            <h4>DJ Fire</h4>
+            <p>Saturday, April 4th 7:00 PM</p>
+            <p class="price">$99.99</p>
+          </article>
+          <div
+            class="event-card not-music not-business not-nightlife not-dating"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2215674535/photo/young-asian-software-development-manager-leads-a-late-night-office-discussion-with-his.jpg?s=2048x2048&w=is&k=20&c=OueOn75ZgEbe0bUfWu0XDOmmPci7j8Dvd7Y72L4hg5k="
+              alt="A group of people sitting in a classroom environment with one person speaking infront of a projected image"
+            />
+            <strong class="almost-full">Almost Full</strong>
+            <h4>Python Phanatics - Bootcamp</h4>
+            <p>Monday - Friday, April 6th - 10th 9:00 AM</p>
+            <p class="price">$299.99</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="events-page-footer">
+      <p>&COPY;2026 Evento Matika Center. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navigation = document.querySelector("nav");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
